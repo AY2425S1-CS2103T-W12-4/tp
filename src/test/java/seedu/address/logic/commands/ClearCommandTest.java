@@ -48,11 +48,11 @@ public class ClearCommandTest {
      */
     private static class TestClearCommand extends ClearCommand {
         private final boolean confirmClear;
-
+        
         public TestClearCommand(boolean confirmClear) {
             this.confirmClear = confirmClear;
         }
-        
+
         @Override
         public CommandResult execute(Model model) {
             requireNonNull(model);
